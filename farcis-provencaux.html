@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Les Petits Farcis Provençaux de Marie</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #fdfaf3;
+            font-family: 'Dancing Script', cursive;
+            color: #4a3c31;
+            margin: 0;
+            padding: 20px;
+        }
+        .grimoire-bloc {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 40px;
+            border: 2px solid #d4a373;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        .categorie-badge {
+            text-align: center;
+            font-family: 'Cinzel', serif;
+            color: #d4a373;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+        h1 {
+            font-family: 'Cinzel', serif;
+            text-align: center;
+            color: #8b5e3c;
+            border-bottom: 2px solid #e9edc9;
+            padding-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+        h1::before, h1::after {
+            content: "";
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-image: url('https://img.icons8.com/ios/50/8b5e3c/olive-oil.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .contenu-texte {
+            line-height: 1.6;
+            font-size: 1.2em;
+        }
+        .petite-histoire {
+            background-color: rgba(233, 237, 201, 0.3);
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 5px solid #d4a373;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+        h3 {
+            font-family: 'Cinzel', serif;
+            color: #8b5e3c;
+            margin-top: 30px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+        }
+        li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #d4a373;
+        }
+        img.main-image {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            border: 5px solid white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            margin: 20px 0;
+        }
+        .btn-retour {
+            display: inline-block;
+            margin-top: 30px;
+            text-decoration: none;
+            color: #8b5e3c;
+            font-weight: bold;
+            font-family: 'Cinzel', serif;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="grimoire-bloc">
+        <div class="categorie-badge">✨ Recettes d'Été : Plats de résistance ✨</div>
+
+        <h1>Les Petits Farcis Provençaux</h1>
+        
+        <div class="contenu-texte">
+
+            <img src="farcis-provencaux.jpg" alt="Petits farcis provençaux de Marie" class="main-image">
+
+            <div class="petite-histoire">
+                <h3 style="margin-top: 0;">La Petite Histoire</h3>
+                C'est le plat du dimanche par excellence en Provence ! Autrefois, on utilisait les restes de viande du pot-au-feu pour garnir les légumes du jardin. On dit que chaque famille a son secret : un peu de pain rassis trempé dans le lait, une pointe d'ail ou un mélange bien précis d'herbes de la garrigue. C'est un plat qui demande du temps et de l'amour, mais quelle récompense quand l'odeur embaume toute la maison !
+            </div>
+
+            <h3>Les Ingrédients</h3>
+            <ul>
+                <li><strong>Légumes :</strong> 4 tomates grappe, 2 courgettes rondes, 2 petits poivrons, 2 oignons blancs.</li>
+                <li><strong>La Farce :</strong> 400g de chair à saucisse, 200g de bœuf haché.</li>
+                <li><strong>Le Liant :</strong> 1 œuf, 2 tranches de pain de mie trempées dans le lait.</li>
+                <li><strong>Les Aromates :</strong> 2 gousses d'ail, 1 bouquet de persil plat, thym, huile d'olive.</li>
+                <li><strong>Le Final :</strong> Chapelure fine et un filet d'huile d'olive.</li>
+            </ul>
+
+            <h3>La Préparation</h3>
+            <p><strong>1. Le creusage :</strong> Lavez les légumes. Coupez les chapeaux et évidez-les délicatement. Gardez la chair des tomates et des courgettes, hachez-la finement.</p>
+            
+            <p><strong>2. La Farce :</strong> Dans un grand saladier, mélangez les viandes, l'œuf, le pain essoré, l'ail haché, le persil et la chair des légumes. Salez, poivrez généreusement.</p>
+
+            <p><strong>3. Le Remplissage :</strong> Garnissez chaque légume avec cette farce. Ne tassez pas trop. Replacez les chapeaux sur chaque légume.</p>
+
+            <p><strong>4. La Cuisson :</strong> Disposez-les dans un plat huilé. Saupoudrez d'un peu de chapelure et arrosez d'un filet d'huile d'olive. Enfournez à 180°C pendant environ 45 à 50 minutes.</p>
+
+            <p><strong>5. Le Conseil :</strong> Ils sont encore meilleurs réchauffés le lendemain, ou dégustés tièdes avec une petite salade de mesclun.</p>
+        </div>
+
+        <div style="text-align: center;">
+             <a href="plats-resistance-ete.html" class="btn-retour">↩ Retour aux Plats de Résistance</a>
+        </div>
+    </div>
+
+</body>
+</html>
