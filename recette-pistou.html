@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -10,7 +12,7 @@
         body {
             margin: 0;
             padding: 0;
-            background-image: url('2222.jpg'); /* Ton fond de cuisine */
+            background-image: url('2222.jpg'); /* TA CUISINE REVIENT ICI */
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -19,11 +21,11 @@
             text-align: center;
         }
 
-        /* LA PHOTO GEANTE (comme l'Aïoli) */
         .photo-entete-geante {
             width: 100%;
-            height: 70vh; /* Elle prend 70% de l'écran pour être bien grande */
+            height: 70vh;
             overflow: hidden;
+            border-bottom: 3px solid #fff;
         }
 
         .photo-entete-geante img {
@@ -32,55 +34,57 @@
             object-fit: cover;
         }
 
-        .contenu {
+        /* LE BLOC BLANC TRANSPARENT (Comme sur tes screens) */
+        .grimoire-bloc {
             max-width: 900px;
-            margin: 0 auto;
-            padding: 40px 20px;
+            margin: -50px auto 50px auto; /* Il remonte un peu sur la photo */
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.85); /* C'est ça qui fait la transparence ! */
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            position: relative;
+            z-index: 10;
         }
 
         h1 {
             font-family: 'Dancing Script', cursive;
             font-size: 3.5rem;
             color: #d17058;
-            margin: 20px 0 10px 0;
+            margin: 0;
         }
 
         .sous-titre {
             font-family: 'Dancing Script', cursive;
             font-size: 1.8rem;
             color: #8b4513;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
         }
 
         h2 {
             font-size: 1.5rem;
             text-transform: uppercase;
-            letter-spacing: 3px;
-            margin-top: 50px;
-            border-bottom: 1px solid rgba(0,0,0,0.1);
-            display: inline-block;
-            padding-bottom: 5px;
+            margin-top: 30px;
+            color: #4a2c2a;
         }
 
         .ingredients, .preparation {
             line-height: 1.8;
             font-size: 1.2rem;
-            margin: 20px 0;
+            text-align: left; /* Aligné à gauche pour mieux lire les étapes */
+            max-width: 700px;
+            margin: 20px auto;
         }
 
         .note-marie {
             font-family: 'Dancing Script', cursive;
             font-size: 1.5rem;
             color: #4a2c2a;
-            margin-top: 40px;
-            font-weight: bold;
+            margin-top: 30px;
         }
 
-        /* TA FLECHE VIOLETTE OFFICIELLE */
         .retour {
             display: block;
-            margin-top: 60px;
-            padding-bottom: 60px;
+            margin-top: 40px;
             font-family: 'Dancing Script', cursive;
             font-size: 2.2rem;
             color: #5a2c72; 
@@ -95,25 +99,25 @@
         <img src="pistou.jpg" alt="Mon Pistou">
     </div>
 
-    <div class="contenu">
+    <div class="grimoire-bloc">
         <h1>Pistou ou Pesto ?</h1>
         <p class="sous-titre">Le mélange des deux traditions</p>
 
         <h2>Les Ingrédients</h2>
         <div class="ingredients">
-            <strong>3</strong> beaux bouquets de basilic frais<br>
-            <strong>4</strong> gousses d'ail dégermées<br>
-            Huile d'olive de Provence<br>
-            Gros sel de Camargue<br>
-            <em>Option : pignons de pin et parmesan</em>
+            • <strong>3</strong> beaux bouquets de basilic frais<br>
+            • <strong>4</strong> gousses d'ail dégermées<br>
+            • Huile d'olive de Provence<br>
+            • Gros sel de Camargue<br>
+            • <em>Pignons de pin et parmesan (optionnel)</em>
         </div>
 
         <h2>La Préparation</h2>
         <div class="preparation">
-            <p><strong>1. La Sauce :</strong> Dans le mortier, écrasez l'ail avec le gros sel jusqu'à obtenir une pommade lisse.</p>
-            <p><strong>2. Le Croquant :</strong> Ajoutez les pignons et pilez jusqu'à ce qu'ils soient bien incorporés.</p>
-            <p><strong>3. Le Basilic :</strong> Ajoutez les feuilles de basilic. Travaillez avec le pilon en tournant vigoureusement.</p>
-            <p><strong>4. Le Liant :</strong> Versez l'huile d'olive en filet très mince, sans cesser de tourner.</p>
+            <p><strong>1. La Sauce :</strong> Écrasez l'ail avec le gros sel jusqu'à obtenir une pommade lisse.</p>
+            <p><strong>2. Le Croquant :</strong> Ajoutez les pignons et pilez-les.</p>
+            <p><strong>3. Le Basilic :</strong> Travaillez les feuilles au pilon en tournant vigoureusement.</p>
+            <p><strong>4. Le Liant :</strong> Versez l'huile d'olive en filet sans cesser de tourner.</p>
         </div>
 
         <p class="note-marie">Le petit conseil de Marie : Les amandes apportent un croquant que j'adore !</p>
@@ -123,4 +127,3 @@
 
 </body>
 </html>
-
