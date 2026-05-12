@@ -2,21 +2,55 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>L'Hiver - Marie</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <title>L'hiver au coin du feu - Un grain de sel</title>
+    <style>
+        body {
+            background-image: url('hiver.jpg'); 
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: 'Times New Roman', serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .message-box {
+            background-color: rgba(255, 255, 255, 0.85);
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            max-width: 500px;
+            border: 2px solid #8b4513;
+            box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+        }
+        h1 { color: #8b4513; font-style: italic; margin-top: 0; }
+        p { font-size: 1.2em; color: #4a2c2a; line-height: 1.6; }
+        .fleche {
+            font-size: 2.5em;
+            text-decoration: none;
+            color: #8b4513;
+            display: inline-block;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
 
-    <div class="grimoire-bloc">
-        <h1 class="hiver">❄️ Recettes d'Hiver</h1>
+    <div class="message-box">
+        <h1>Un peu de patience...</h1>
+        <p>
+            Doucement ! Pour l'instant, les cigales chantent encore et le tablier est aux couleurs de l'été ! ☀️
+        </p>
+        <p>
+            Mes marmites attendent sagement que les feuilles tombent. 
+            <strong>Dès le mois de septembre</strong>, quand le petit air frais pointera son nez, 
+            je ressortirai les recettes qui réchauffent le cœur.
+        </p>
+        <p>En attendant, profitez bien du soleil !</p>
         
-        <div class="menu-categories">
-            <a href="plats-principaux-hiver.html" class="printemps">🍽️ Plats Principaux</a>
-            
-            <br><br>
-            <a href="index.html" class="l-humeur">↩ Retour à l'accueil</a>
-        </div>
+        <a href="index.html" class="fleche" title="Retour à l'accueil">↩</a>
     </div>
 
 </body>
