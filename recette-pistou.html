@@ -10,13 +10,13 @@
         body {
             margin: 0;
             padding: 0;
-            background-color: white; /* Fond de secours */
+            background-color: white;
             font-family: 'Georgia', serif;
             color: #000;
             text-align: center;
         }
 
-        /* CONFIGURATION DE TA CUISINE EN FOND TRANSPARENT */
+        /* CONFIGURATION DU FOND (ENCORE PLUS DISCRET) */
         body::before {
             content: "";
             position: fixed;
@@ -25,25 +25,25 @@
             width: 100%;
             height: 100%;
             z-index: -1;
-            background-image: url('fond-cuisine.jpg'); /* TON IMAGE DE CUISINE */
+            background-image: url('fond-cuisine.jpg'); 
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
-            /* C'EST ICI QU'ON RÉGLE LA TRANSPARENCE DU FOND (0.3 = très doux) */
-            opacity: 0.3; 
+            /* RÉGLAGE DE LA LISIBILITÉ : 0.15 pour que ce soit très léger */
+            opacity: 0.15; 
         }
 
-        /* GRANDE PHOTO DE LA RECETTE EN HAUT */
+        /* PHOTO DU PISTOU */
         .photo-entete {
             width: 100%;
-            height: 70vh;
+            height: 65vh;
             object-fit: cover;
             border-bottom: 5px solid #fff;
             margin-bottom: 40px;
         }
 
         .contenu-recette {
-            max-width: 850px;
+            max-width: 800px;
             margin: 0 auto;
             padding: 20px;
         }
@@ -58,7 +58,7 @@
         .sous-titre {
             font-family: 'Dancing Script', cursive;
             font-size: 1.8rem;
-            color: #444;
+            color: #555;
             margin-bottom: 40px;
         }
 
@@ -73,13 +73,12 @@
 
         .section-texte {
             text-align: left;
-            line-height: 1.8;
-            font-size: 1.2rem;
+            line-height: 1.9; /* Un peu plus d'espace pour mieux lire */
+            font-size: 1.25rem;
             max-width: 750px;
             margin: 0 auto;
         }
 
-        /* TA FLÈCHE VIOLETTE */
         .retour {
             display: block;
             text-align: center;
