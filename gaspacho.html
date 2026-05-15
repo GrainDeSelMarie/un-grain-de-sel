@@ -4,10 +4,22 @@
     <meta charset="UTF-8">
     <title>Mon Gaspacho du Sud - Un Grain de Sel</title>
     <style>
-        body { font-family: 'Times New Roman', serif; background-color: #fdfaf6; padding: 30px; color: #333; line-height: 1.6; }
-        .container { max-width: 900px; margin: auto; }
+        /* On enlève absolument toutes les marges du bord de page */
+        body { margin: 0; padding: 0; font-family: 'Times New Roman', serif; background-color: #fdfaf6; color: #333; line-height: 1.6; }
+        
+        /* LA PHOTO EN BANNIÈRE : Largeur 100% sans aucune marge */
+        .header-photo { 
+            width: 100%; 
+            height: 450px; /* Tu peux ajuster la hauteur ici si tu trouves ça trop grand */
+            object-fit: cover; 
+            display: block; 
+            border-bottom: 5px solid #b22222; 
+        }
+        
+        /* Le reste du texte reste bien centré et lisible */
+        .container { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+        
         h1 { color: #b22222; border-bottom: 2px solid #b22222; text-transform: uppercase; text-align: center; font-size: 2.5em; }
-        .photo { max-width: 100%; height: auto; border: 10px solid white; box-shadow: 0 4px 15px rgba(0,0,0,0.2); margin: 20px auto; display: block; }
         
         .encadre-histoire { background-color: #fffaf1; border: 1px solid #d35400; padding: 25px; border-radius: 15px; margin: 30px 0; }
         .encadre-histoire h3 { color: #d35400; margin-top: 0; font-variant: small-caps; }
@@ -17,15 +29,16 @@
         li { margin-bottom: 12px; }
         strong { color: #b22222; }
         
-        .retour { text-align: center; margin-top: 50px; }
+        .retour { text-align: center; margin-top: 50px; padding-bottom: 40px; }
         .retour a { color: #b22222; text-decoration: none; font-weight: bold; font-size: 1.2em; }
     </style>
 </head>
 <body>
+
+    <img src="gaspacho.jpg" alt="Mon Gaspacho du Sud" class="header-photo">
+
     <div class="container">
         <h1>🍅 Mon Gaspacho du Sud</h1>
-
-        <img src="gaspacho.jpg" alt="Le Gaspacho de Marie" class="photo">
 
         <div class="encadre-histoire">
             <h3>La véritable histoire du Gaspacho</h3>
@@ -43,7 +56,7 @@
                 <li><strong>60g de mie de pain rassis :</strong> C'est le secret de l'onctuosité.</li>
                 <li><strong>Huile d'olive :</strong> Une bonne huile du pays (environ 10 cl).</li>
                 <li><strong>Vinaigre de Xérès :</strong> Pour le caractère.</li>
-                <li>Sel et une pincée de piment d'Espelette.</li>
+                <li>Sel fin et une pincée de piment d'Espelette.</li>
             </ul>
         </div>
 
